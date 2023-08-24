@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chidiya Kabutar - LIVE!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="top">
+        <h1>Chidiya Kabutar - LIVE!</h1>
+        <div id="start-game-timer">
+            <div class="values">
+                <button id="gs-btn" onclick="startTimer();">Start Game</button>
+                <h2 class="timer">120</h2>  
+            </div>
+            <h2 class="timer">Wallet : ₹<span id="myAmount"></span></h2>
+        </div>
+    </div>
+
+    <div id="selection">
+        <div class="items">
+            <img src="assets/umbrella.png" alt="">
+            <p class="item-name">Umbrella</p>
+            <input id="amount" class="amount" placeholder="₹10 - ₹1500" type="number" min="10" max="1500">
+        </div>
+        <div class="items">
+            <img src="assets/football.png" alt="">
+            <p class="item-name">Football</p>
+            <input id="amount" class="amount"  placeholder="₹10 - ₹1500" type="number" min="10" max="1500">
+        </div>
+        <div class="items">
+            <img src="assets/sun.png" alt="">
+            <p class="item-name">Sun</p>
+            <input id="amount" class="amount" placeholder="₹10 - ₹1500" type="number" min="10" max="1500">
+        </div>
+        <div class="items">
+            <img src="assets/oil-lamp.png" alt="">
+            <p class="item-name">Diya</p>
+            <input id="amount" class="amount" placeholder="₹10 - ₹1500" type="number" min="10" max="1500">
+        </div>
+        <div class="items">
+            <img src="assets/cow.png" alt="">
+            <p class="item-name">Cow</p>
+            <input id="amount" class="amount" placeholder="₹10 - ₹1500" type="number" min="10" max="1500">
+        </div>
+        <div class="items">
+            <img src="assets/bucket.png" alt="">
+            <p class="item-name">Bucket</p>
+            <input id="amount" class="amount" placeholder="₹10 - ₹1500" type="number" min="10" max="1500">
+        </div>
+        <div class="items">
+            <img src="assets/kite.png" alt="">
+            <p class="item-name">Kite</p>
+            <input id="amount" class="amount" placeholder="₹10 - ₹1500" type="number" min="10" max="1500">
+        </div>
+        <div class="items">
+            <img src="assets/pen.png" alt="">
+            <p class="item-name">Pen</p>
+            <input id="amount" class="amount" placeholder="₹10 - ₹1500" type="number" min="10" max="1500">
+        </div>
+        <div class="items">
+            <img src="assets/rose.png" alt="">
+            <p class="item-name">Flower</p>
+            <input id="amount" class="amount" placeholder="₹10 - ₹1500" type="number" min="10" max="1500">
+        </div>
+        <div class="items">
+            <img src="assets/pigeon_8277621.png" alt="">
+            <p class="item-name">Pigeon</p>
+            <input id="amount" class="amount" placeholder="₹10 - ₹1500" type="number" min="10" max="1500">
+        </div>
+        <div class="items">
+            <img src="assets/butterfly_4167260.png" alt="">
+            <p class="item-name">Butterfly</p>
+            <input id="amount" class="amount" placeholder="₹10 - ₹1500" type="number" min="10" max="1500">
+        </div>
+        <div class="items">
+            <img src="assets/bunny_4185015.png" alt="">
+            <p class="item-name">Rabbit</p>
+            <input id="amount" class="amount" placeholder="₹10 - ₹1500" type="number" min="10" max="1500">
+        </div>
+
+        <p class="player-selected"></p>
+        <button id="btn" onclick="playGame();">Select To Play</button>
+    </div>
+
+
+
+
+    <div id="result-box">
+        <p>You Selected : </p>
+        <p>Result : </p>
+        <h3 id="result-text"></h3>
+
+        <button class="play-again" onclick="playAgain();">Play Again!</button>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
