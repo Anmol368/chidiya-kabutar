@@ -65,10 +65,10 @@ items.forEach(function (item) {
         //     var inputValue = input[11].value;
         // }
 
-        if(selectedArray.includes({selectedItem : inputValue})) {
+        if(selectedArray.includes(selectedItem)) {
             return;
         } else {
-            selectedArray.push({selectedItem : inputValue});
+            selectedArray.push(selectedItem);
             console.log(selectedArray);
         }
         
