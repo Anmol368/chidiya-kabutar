@@ -1,13 +1,12 @@
 var timer = 120;
-var amount = 1000;
+// var amount = 1000;
 var myInterval;
 var inputValue = 0;
 
-document.getElementById("myAmount").innerHTML = amount;
+// document.getElementById("myAmount").innerHTML = amount;
 
 var items = document.querySelectorAll(".items");
 var input = document.querySelectorAll(".amount");
-console.log(input);
 var playerSelection = document.querySelectorAll("#result-box p");
 
 let selectedArray =[];
@@ -38,38 +37,10 @@ function startTimer() {
 items.forEach(function (item) {
     item.addEventListener("click", () => {
         var selectedItem = item.innerText;
-
-        // if(selectedItem === "Umbrella") {
-        //     var inputValue = input[0].value;
-        // } else if(selectedItem === "Football") {
-        //     var inputValue = input[1].value;
-        // } else if(selectedItem === "Sun") {
-        //     var inputValue = input[2].value;
-        // } else if(selectedItem === "Diya") {
-        //     var inputValue = input[3].value;
-        // } else if(selectedItem === "Cow") {
-        //     var inputValue = input[4].value;
-        // } else if(selectedItem === "Bucket") {
-        //     var inputValue = input[5].value;
-        // } else if(selectedItem === "Kite") {
-        //     var inputValue = input[6].value;
-        // } else if(selectedItem === "Pen") {
-        //     var inputValue = input[7].value;
-        // } else if(selectedItem === "Flower") {
-        //     var inputValue = input[8].value;
-        // } else if(selectedItem === "Pigeon") {
-        //     var inputValue = input[9].value;
-        // } else if(selectedItem === "Butterfly") {
-        //     var inputValue = input[10].value;
-        // } else {
-        //     var inputValue = input[11].value;
-        // }
-
         if(selectedArray.includes(selectedItem)) {
             return;
         } else {
             selectedArray.push(selectedItem);
-            console.log(selectedArray);
         }
         
         document.querySelector(".player-selected").textContent = "You Selected : " + selectedArray.join(", ");
