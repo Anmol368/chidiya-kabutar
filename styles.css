@@ -58,6 +58,7 @@ h1{
 }
 
 #selection{
+    transition: all 0.5 linear;
     padding: 20px;
     opacity: 0.5;
     max-width: 80vw;
@@ -68,15 +69,21 @@ h1{
     border-radius: 25px;
     /* background-color: #EEE3CB; */
     background-color: #D7C0AE;
+    pointer-events: none;
 }
 
 .items{
+    transition: all 0.5 linear;
     display: flex;
     flex: 1 0 15%; /* explanation below */
     flex-direction: column;
     align-items: center;
     margin: 30px 10px;
     cursor: pointer;
+}
+
+.items-inner{
+    text-align: center;
 }
 
 .items img{
@@ -105,6 +112,7 @@ h1{
 }
 
 .player-selected{
+    display: none;
     margin: auto;
     font-size: 30px;
     font-weight: 600;
@@ -119,13 +127,14 @@ h1{
     background-color: #FF6969;
     color: #F1F0E8;
     cursor: pointer;
+    pointer-events: none;
 }
 
 
 
 #result-box{
     opacity: 0;
-    transition: opacity 0.3;
+    transition: all 0.5 linear;
     padding: 20px;
     position: absolute;
     top: 0%;
